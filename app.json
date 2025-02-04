@@ -124,17 +124,16 @@
       "value": "false"
     }
   },
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ],
+"formation": {
+                "worker": {
+                        "quantity": 1,
+                        "size": "basic"
+                }
+        },
 
-  "buildpacks": [],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "basic"
+  "addons":[
+    {
+      "plan":"heroku-postgresql"
     }
-  }
+  ]
 }
